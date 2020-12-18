@@ -74,19 +74,27 @@ Partial Class Operadores
         Me.GroupBoxCalcular.TabIndex = 0
         Me.GroupBoxCalcular.TabStop = False
         Me.GroupBoxCalcular.Text = "CALCULAR"
+        Me.ToolTipUML.SetToolTip(Me.GroupBoxCalcular, "Introducir solo números")
         '
         'ButtonSalir
         '
+        Me.ButtonSalir.BackColor = System.Drawing.Color.Red
+        Me.ButtonSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.ButtonSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ButtonSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonSalir.ForeColor = System.Drawing.Color.Black
         Me.ButtonSalir.Location = New System.Drawing.Point(573, 116)
         Me.ButtonSalir.Name = "ButtonSalir"
         Me.ButtonSalir.Size = New System.Drawing.Size(131, 24)
         Me.ButtonSalir.TabIndex = 6
         Me.ButtonSalir.Text = "SALIR"
         Me.ToolTipUML.SetToolTip(Me.ButtonSalir, "Cerrar el programa")
-        Me.ButtonSalir.UseVisualStyleBackColor = True
+        Me.ButtonSalir.UseVisualStyleBackColor = False
         '
         'ButtonCalcular
         '
+        Me.ButtonCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonCalcular.ForeColor = System.Drawing.Color.ForestGreen
         Me.ButtonCalcular.Location = New System.Drawing.Point(573, 76)
         Me.ButtonCalcular.Name = "ButtonCalcular"
         Me.ButtonCalcular.Size = New System.Drawing.Size(131, 24)
@@ -97,6 +105,8 @@ Partial Class Operadores
         '
         'ButtonNuevo
         '
+        Me.ButtonNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonNuevo.ForeColor = System.Drawing.SystemColors.MenuHighlight
         Me.ButtonNuevo.Location = New System.Drawing.Point(573, 35)
         Me.ButtonNuevo.Name = "ButtonNuevo"
         Me.ButtonNuevo.Size = New System.Drawing.Size(131, 24)
@@ -119,6 +129,7 @@ Partial Class Operadores
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(110, 20)
         Me.TextBox1.TabIndex = 2
+        Me.TextBox1.Tag = ""
         Me.ToolTipUML.SetToolTip(Me.TextBox1, "Introduce el primer número")
         '
         'LabelNúmero2
