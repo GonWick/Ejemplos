@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class Operadores
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,10 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Operadores))
         Me.GroupBoxCalcular = New System.Windows.Forms.GroupBox()
         Me.ButtonSalir = New System.Windows.Forms.Button()
         Me.ButtonCalcular = New System.Windows.Forms.Button()
@@ -49,12 +51,16 @@ Partial Class Form1
         Me.LabelMultiplicacion = New System.Windows.Forms.Label()
         Me.LabelResta = New System.Windows.Forms.Label()
         Me.LabelSuma = New System.Windows.Forms.Label()
+        Me.PictureBoxUML = New System.Windows.Forms.PictureBox()
+        Me.ToolTipUML = New System.Windows.Forms.ToolTip(Me.components)
         Me.GroupBoxCalcular.SuspendLayout()
         Me.GroupBoxResultados.SuspendLayout()
+        CType(Me.PictureBoxUML, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBoxCalcular
         '
+        Me.GroupBoxCalcular.Controls.Add(Me.PictureBoxUML)
         Me.GroupBoxCalcular.Controls.Add(Me.ButtonSalir)
         Me.GroupBoxCalcular.Controls.Add(Me.ButtonCalcular)
         Me.GroupBoxCalcular.Controls.Add(Me.ButtonNuevo)
@@ -210,6 +216,7 @@ Partial Class Form1
         '
         'TextBoxRaiz
         '
+        Me.TextBoxRaiz.Enabled = False
         Me.TextBoxRaiz.Location = New System.Drawing.Point(573, 155)
         Me.TextBoxRaiz.Name = "TextBoxRaiz"
         Me.TextBoxRaiz.Size = New System.Drawing.Size(131, 20)
@@ -217,6 +224,7 @@ Partial Class Form1
         '
         'TextBoxPotencia
         '
+        Me.TextBoxPotencia.Enabled = False
         Me.TextBoxPotencia.Location = New System.Drawing.Point(573, 102)
         Me.TextBoxPotencia.Name = "TextBoxPotencia"
         Me.TextBoxPotencia.Size = New System.Drawing.Size(131, 20)
@@ -224,6 +232,7 @@ Partial Class Form1
         '
         'TextBoxDivision
         '
+        Me.TextBoxDivision.Enabled = False
         Me.TextBoxDivision.Location = New System.Drawing.Point(573, 38)
         Me.TextBoxDivision.Name = "TextBoxDivision"
         Me.TextBoxDivision.Size = New System.Drawing.Size(131, 20)
@@ -231,6 +240,7 @@ Partial Class Form1
         '
         'TextBoxMultiplicacion
         '
+        Me.TextBoxMultiplicacion.Enabled = False
         Me.TextBoxMultiplicacion.Location = New System.Drawing.Point(198, 159)
         Me.TextBoxMultiplicacion.Name = "TextBoxMultiplicacion"
         Me.TextBoxMultiplicacion.Size = New System.Drawing.Size(110, 20)
@@ -238,6 +248,7 @@ Partial Class Form1
         '
         'TextBoxResta
         '
+        Me.TextBoxResta.Enabled = False
         Me.TextBoxResta.Location = New System.Drawing.Point(198, 98)
         Me.TextBoxResta.Name = "TextBoxResta"
         Me.TextBoxResta.Size = New System.Drawing.Size(110, 20)
@@ -245,6 +256,7 @@ Partial Class Form1
         '
         'TextBoxSuma
         '
+        Me.TextBoxSuma.Enabled = False
         Me.TextBoxSuma.Location = New System.Drawing.Point(198, 38)
         Me.TextBoxSuma.Name = "TextBoxSuma"
         Me.TextBoxSuma.Size = New System.Drawing.Size(110, 20)
@@ -304,7 +316,17 @@ Partial Class Form1
         Me.LabelSuma.TabIndex = 0
         Me.LabelSuma.Text = "Suma"
         '
-        'Form1
+        'PictureBoxUML
+        '
+        Me.PictureBoxUML.Image = CType(resources.GetObject("PictureBoxUML.Image"), System.Drawing.Image)
+        Me.PictureBoxUML.Location = New System.Drawing.Point(362, 19)
+        Me.PictureBoxUML.Name = "PictureBoxUML"
+        Me.PictureBoxUML.Size = New System.Drawing.Size(179, 166)
+        Me.PictureBoxUML.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBoxUML.TabIndex = 7
+        Me.PictureBoxUML.TabStop = False
+        '
+        'Operadores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -314,12 +336,14 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "Form1"
+        Me.Name = "Operadores"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "OPERADORES ARÍTMETICOS"
         Me.GroupBoxCalcular.ResumeLayout(False)
         Me.GroupBoxCalcular.PerformLayout()
         Me.GroupBoxResultados.ResumeLayout(False)
         Me.GroupBoxResultados.PerformLayout()
+        CType(Me.PictureBoxUML, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -351,4 +375,6 @@ Partial Class Form1
     Friend WithEvents LabelOperacionMult As Label
     Friend WithEvents LabelOperacionResta As Label
     Friend WithEvents LabelOperacionSuma As Label
+    Friend WithEvents PictureBoxUML As PictureBox
+    Friend WithEvents ToolTipUML As ToolTip
 End Class

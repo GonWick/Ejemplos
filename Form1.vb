@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Operadores
     Dim num1, num2 As Integer
     Dim suma, resta, mult As Integer
     Dim div, potencia, raiz As Double
@@ -25,6 +25,10 @@
         LabelOperacionPot.Text = TextBox1.Text & "^" & TextBox2.Text
         LabelOperacionRaiz.Text = TextBox1.Text & "^(1/" & TextBox2.Text & ")"
 
+    End Sub
+
+    Private Sub PictureBoxUML_Click(sender As Object, e As EventArgs) Handles PictureBoxUML.Click
+        FormUML.Show()
     End Sub
 
     Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
@@ -59,6 +63,7 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Me.ToolTipUML.IsBalloon = True
+        Me.ToolTipUML.SetToolTip(PictureBoxUML, "Diagrama UML")
     End Sub
 End Class
