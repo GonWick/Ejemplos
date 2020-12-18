@@ -73,7 +73,7 @@ Partial Class Operadores
         Me.GroupBoxCalcular.Size = New System.Drawing.Size(776, 203)
         Me.GroupBoxCalcular.TabIndex = 0
         Me.GroupBoxCalcular.TabStop = False
-        Me.GroupBoxCalcular.Text = "Calcular"
+        Me.GroupBoxCalcular.Text = "CALCULAR"
         '
         'ButtonSalir
         '
@@ -81,7 +81,8 @@ Partial Class Operadores
         Me.ButtonSalir.Name = "ButtonSalir"
         Me.ButtonSalir.Size = New System.Drawing.Size(131, 24)
         Me.ButtonSalir.TabIndex = 6
-        Me.ButtonSalir.Text = "Salir"
+        Me.ButtonSalir.Text = "SALIR"
+        Me.ToolTipUML.SetToolTip(Me.ButtonSalir, "Cerrar el programa")
         Me.ButtonSalir.UseVisualStyleBackColor = True
         '
         'ButtonCalcular
@@ -90,7 +91,8 @@ Partial Class Operadores
         Me.ButtonCalcular.Name = "ButtonCalcular"
         Me.ButtonCalcular.Size = New System.Drawing.Size(131, 24)
         Me.ButtonCalcular.TabIndex = 5
-        Me.ButtonCalcular.Text = "Calcular"
+        Me.ButtonCalcular.Text = "CALCULAR"
+        Me.ToolTipUML.SetToolTip(Me.ButtonCalcular, "Realiza las operaciones Aritméticas")
         Me.ButtonCalcular.UseVisualStyleBackColor = True
         '
         'ButtonNuevo
@@ -99,7 +101,8 @@ Partial Class Operadores
         Me.ButtonNuevo.Name = "ButtonNuevo"
         Me.ButtonNuevo.Size = New System.Drawing.Size(131, 24)
         Me.ButtonNuevo.TabIndex = 4
-        Me.ButtonNuevo.Text = "Nuevo - Borrar"
+        Me.ButtonNuevo.Text = "BORRAR - NUEVO"
+        Me.ToolTipUML.SetToolTip(Me.ButtonNuevo, "Limpia los resultados y introduce nuevos números para calcular operaciones")
         Me.ButtonNuevo.UseVisualStyleBackColor = True
         '
         'TextBox2
@@ -108,6 +111,7 @@ Partial Class Operadores
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(110, 20)
         Me.TextBox2.TabIndex = 3
+        Me.ToolTipUML.SetToolTip(Me.TextBox2, "Introduce el segundo número")
         '
         'TextBox1
         '
@@ -115,24 +119,25 @@ Partial Class Operadores
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(110, 20)
         Me.TextBox1.TabIndex = 2
+        Me.ToolTipUML.SetToolTip(Me.TextBox1, "Introduce el primer número")
         '
         'LabelNúmero2
         '
         Me.LabelNúmero2.AutoSize = True
         Me.LabelNúmero2.Location = New System.Drawing.Point(42, 122)
         Me.LabelNúmero2.Name = "LabelNúmero2"
-        Me.LabelNúmero2.Size = New System.Drawing.Size(53, 13)
+        Me.LabelNúmero2.Size = New System.Drawing.Size(64, 13)
         Me.LabelNúmero2.TabIndex = 1
-        Me.LabelNúmero2.Text = "Número 2"
+        Me.LabelNúmero2.Text = "NUMERO 2"
         '
         'LabelNumero1
         '
         Me.LabelNumero1.AutoSize = True
         Me.LabelNumero1.Location = New System.Drawing.Point(42, 47)
         Me.LabelNumero1.Name = "LabelNumero1"
-        Me.LabelNumero1.Size = New System.Drawing.Size(53, 13)
+        Me.LabelNumero1.Size = New System.Drawing.Size(64, 13)
         Me.LabelNumero1.TabIndex = 0
-        Me.LabelNumero1.Text = "Número 1"
+        Me.LabelNumero1.Text = "NUMERO 1"
         '
         'GroupBoxResultados
         '
@@ -216,49 +221,49 @@ Partial Class Operadores
         '
         'TextBoxRaiz
         '
-        Me.TextBoxRaiz.Enabled = False
         Me.TextBoxRaiz.Location = New System.Drawing.Point(573, 155)
         Me.TextBoxRaiz.Name = "TextBoxRaiz"
+        Me.TextBoxRaiz.ReadOnly = True
         Me.TextBoxRaiz.Size = New System.Drawing.Size(131, 20)
         Me.TextBoxRaiz.TabIndex = 11
         '
         'TextBoxPotencia
         '
-        Me.TextBoxPotencia.Enabled = False
         Me.TextBoxPotencia.Location = New System.Drawing.Point(573, 102)
         Me.TextBoxPotencia.Name = "TextBoxPotencia"
+        Me.TextBoxPotencia.ReadOnly = True
         Me.TextBoxPotencia.Size = New System.Drawing.Size(131, 20)
         Me.TextBoxPotencia.TabIndex = 10
         '
         'TextBoxDivision
         '
-        Me.TextBoxDivision.Enabled = False
         Me.TextBoxDivision.Location = New System.Drawing.Point(573, 38)
         Me.TextBoxDivision.Name = "TextBoxDivision"
+        Me.TextBoxDivision.ReadOnly = True
         Me.TextBoxDivision.Size = New System.Drawing.Size(131, 20)
         Me.TextBoxDivision.TabIndex = 9
         '
         'TextBoxMultiplicacion
         '
-        Me.TextBoxMultiplicacion.Enabled = False
         Me.TextBoxMultiplicacion.Location = New System.Drawing.Point(198, 159)
         Me.TextBoxMultiplicacion.Name = "TextBoxMultiplicacion"
+        Me.TextBoxMultiplicacion.ReadOnly = True
         Me.TextBoxMultiplicacion.Size = New System.Drawing.Size(110, 20)
         Me.TextBoxMultiplicacion.TabIndex = 8
         '
         'TextBoxResta
         '
-        Me.TextBoxResta.Enabled = False
         Me.TextBoxResta.Location = New System.Drawing.Point(198, 98)
         Me.TextBoxResta.Name = "TextBoxResta"
+        Me.TextBoxResta.ReadOnly = True
         Me.TextBoxResta.Size = New System.Drawing.Size(110, 20)
         Me.TextBoxResta.TabIndex = 7
         '
         'TextBoxSuma
         '
-        Me.TextBoxSuma.Enabled = False
         Me.TextBoxSuma.Location = New System.Drawing.Point(198, 38)
         Me.TextBoxSuma.Name = "TextBoxSuma"
+        Me.TextBoxSuma.ReadOnly = True
         Me.TextBoxSuma.Size = New System.Drawing.Size(110, 20)
         Me.TextBoxSuma.TabIndex = 6
         '
